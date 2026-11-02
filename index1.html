@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aizhamal Portfolio</title>
+<link href="index.css">
+</head>
+<body>
+<div id="scaler">
+<div class="frame">
+
+  <nav class="abs nav">
+    <a href="#">Home</a><a href="#about">About</a><a href="#work">Work</a>
+  </nav>
+ 
+  <svg class="abs logo" viewBox="0 0 100 100" aria-label="logo">
+    <defs>
+      <radialGradient id="lg" cx="50%" cy="35%" r="70%">
+        <stop offset="0" stop-color="#5aa0e8"/><stop offset="1" stop-color="#16356b"/>
+      </radialGradient>
+    </defs>
+    <circle cx="50" cy="50" r="48" fill="url(#lg)" stroke="#e8edf7" stroke-width="3"/>
+    <path d="M14 58 Q30 44 50 56 T86 54 L86 66 Q68 76 50 68 T14 70 Z" fill="#fff" opacity=".92"/>
+    <path d="M30 40 L50 22 L70 40 Z" fill="#fff" opacity=".85"/>
+  </svg>
+
+  <div class="abs hello">Hello, I'm Aizhamal</div>
+  <h1 class="abs title">Progrmmer<br>Student</h1>
+  <a class="abs hero-link" href="#contact">Contact Me</a>
+  <div class="abs photo"><img src="WhatsApp Image 2026-10-16 at 09.16.47.jpeg" alt="Aizhamal"></div>
+
+  <h2 class="abs h2" id="about" style="left:99px; top:927px;">about me</h2>
+  <div class="abs rule" style="left:478px; top:965px; width:857px;"></div>
+  <p class="abs about-text">My name is Aizhamal. I am someone who strives to grow and try new things. For me, it is important not just to complete tasks, but to understand their meaning and find my own approach. I enjoy learning, finding inspiration in details, and applying it to both work and life.I am open to collaboration, but I can also work independently and find what I start.</p>
+
+  <div class="abs skill" style="left:200px;"><b>Java</b><span>Experience</span></div>
+  <div class="abs skill" style="left:547px;"><b>Python</b><span>Experience</span></div>
+  <div class="abs skill" style="left:984px;"><b>HTML</b><span>Experience</span></div>
+
+  <h2 class="abs h2" id="work" style="left:99px; top:1441px;">why me</h2>
+  <div class="abs rule" style="left:442px; top:1479px; width:893px;"></div>
+  <div class="abs why-text">
+    <p>I am reliable, motivated, and eager to grow. I bring fresh ideas, learn quickly, and always finish what I start. Choosing me means getting someone who works with care, creativity, and responsibility.</p>
+    <p>I am talented, versatile, and not limited to programming. Alongside my technical skills, I bring creativity, fresh ideas, and the ability to adapt to different tasks. Choosing me means getting someone reliable, motivated, and full of potential.</p>
+    <p>My goal is to bring not only skills, but also creativity, responsibility, and motivation to achieve great results together.</p>
+  </div>
+
+  <h2 class="abs h2" id="contact" style="left:117px; top:2253px;">Contact Me</h2>
+  <div class="abs rule" style="left:586px; top:2290px; width:767px;"></div>
+  <p class="abs contact-sub">I would be glad to work with you and contribute to the success of your company and projects.</p>
+
+  <form onsubmit="return false">
+    <div class="abs field" style="top:2500px; height:62px;"><label for="n">Name</label><input id="n" type="text"></div>
+    <div class="abs field" style="top:2633px; height:64px;"><label for="e">Email</label><input id="e" type="email"></div>
+    <div class="abs field" style="top:2777px; height:169px;"><label for="m">Message</label><textarea id="m"></textarea></div>
+    <button class="abs send" type="submit">SEND MESSAGE</button>
+  </form>
+
+  <a class="abs insta" href="https://instagram.com" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="#fff" stroke-width="1.8">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4.2"/>
+      <circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/>
+    </svg>
+  </a>
+</div>
+</div>
+
+<script>
+  function fit() {
+    var s = Math.min(1, window.innerWidth / 1440);
+    document.getElementById('scaler').style.transform = 'scale(' + s + ')';
+    document.body.style.height = (3280 * s) + 'px';
+  }
+  window.addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>
